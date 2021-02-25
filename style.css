@@ -295,13 +295,14 @@ footer {
 
 
 }
+
 .footer2 , .footer3{
   padding: 5rem 2rem;
   /* padding-left: 5rem; */
 
 }
 .footer3{
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 .footer-logo {
   padding: 6rem;
@@ -318,23 +319,13 @@ footer {
   margin-bottom: 1rem;
 }
 
-.icons {
-
-  margin-top:1rem ;
-  /* border: 1px solid red; */
-
-  
+.icons {  
   flex-wrap: wrap;
   margin:0;
-  max-height: 1.5rem;
 }
 
 .social-icons {
   margin-right: 2rem;
-
-
-  /* border: 1px solid red; */
-
 }
 
 
