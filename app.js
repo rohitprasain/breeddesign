@@ -1,39 +1,56 @@
 
+openhamburger = document.querySelector(".openhamburger");
 
-
-openhamburger = document.querySelector('.openhamburger');
-
-menu = document.querySelector('.menu');
+menu = document.querySelector(".menu");
 // main = document.querySelector('.main');
-nav = document.querySelector('.nav');
+nav = document.querySelector(".nav");
 
-closehamburger = document.querySelector('.closehamburger');
+closehamburger = document.querySelector(".closehamburger");
 
+openhamburger.addEventListener("click", () => {
 
-openhamburger.addEventListener('click',() => {
-    menu.style.display = 'flex';
-    // nav.style.display = 'none';
+  menu.style.display = "flex";
+  menu.style.top = "0";
+});
 
-    // main.style.opacity='0.5';
-    // menu.style.opacity='1';
-    menu.style.top = '0';
-})
+closehamburger.addEventListener("click", () => {
+  menu.style.top = "-100%";
+  presents.style.opacity = "1";
 
-
-closehamburger.addEventListener('click',() => {
-    menu.style.top = '-100%';
-})
+});
 
 
-helping = document.querySelector('.helping');
-number = document.querySelector('.number');
+//shaky number
+helping = document.querySelector(".helping");
+number = document.querySelector(".number");
 
-helping.addEventListener('mouseover', ()=> {
-    number.style.animation = 'shake 0.5s 3';
-    number.style.color = 'red';
-})
+helping.addEventListener("mouseover", () => {
+  number.style.animation = "shake 0.5s 3";
+  number.style.color = "red";
+});
 
-helping.addEventListener('mouseout', ()=> {
-    number.style.animation = 'none';
-    number.style.color = 'green';
-})
+helping.addEventListener("mouseout", () => {
+  number.style.animation = "none";
+  number.style.color = "green";
+});
+
+
+//hide ashika foundation presents
+presents = document.getElementById("present");
+
+var myScrollFunc = function () {
+  var y = window.scrollY;
+  
+  if (y < 250) {
+    presents.style.opacity = "1";
+  } else {
+    presents.style.opacity = "0.1";
+  }
+  if(menu.style.display=="flex"){
+    presents.style.opacity = "0";
+
+  }
+ 
+};
+
+window.addEventListener("scroll", myScrollFunc);
