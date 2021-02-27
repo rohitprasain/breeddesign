@@ -8,6 +8,7 @@ donatebtn = document.querySelector(".btn");
 donatebtn.addEventListener("click", () => {
   menu.style.top = "-100%";
 });
+
 openhamburger.addEventListener("click", () => {
   menu.style.display = "flex";
   menu.style.top = "0";

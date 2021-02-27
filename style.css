@@ -291,6 +291,8 @@ button:hover {
   min-height: 2px;
   width: 100%;
 } */
+
+/* our volunteer section starts */
 .volunteer {
   /* border: 1px solid black; */
   position: relative;
@@ -326,7 +328,7 @@ button:hover {
 }
 .card-image img {
   position: absolute;
-  top: -.5rem;
+  top: -0.5rem;
   right: 3rem;
   border-radius: 2px;
 }
@@ -339,7 +341,7 @@ button:hover {
   font-weight: 400;
 }
 
-.card-media{
+.card-media {
   position: absolute;
   top: 3rem;
   right: 1rem;
@@ -349,20 +351,19 @@ button:hover {
   /* justify-content: space-around; */
 }
 
-.card-icons{
-  margin-top: .8rem;
+.card-icons {
+  margin-top: 0.8rem;
   cursor: pointer;
 }
 
-
-
-
-
-
+/* our volunteer section ends */
 
 /* donate section starts */
+
 .donate-section {
   /* border: 1px solid red; */
+
+  margin-top: 5rem;
 }
 .donate-section img {
   /* border: 1px solid red; */
@@ -376,11 +377,55 @@ button:hover {
 .donate-mid {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: space-around; */
   align-items: center;
 }
 
+.midtext {
+  text-decoration: none;
+  font-size: 4rem;
+  color: #3cc78f;
+}
+.midword {
+  color: #3cc78f;
+  font-size: 2rem;
+  margin: 1.4rem;
+}
+
+input {
+  border-radius: 1rem;
+  border: 3px solid #3cc78f;
+  width: 16rem;
+  height: 3.8rem;
+  font-size: 2rem;
+  text-align: center;
+}
+input:focus{
+  outline: none;
+}
+.donate-btn {
+  background: #3cc78f;
+  border-radius: 1rem;
+  width: 241px;
+  height: 53px;
+  margin-top: 3rem;
+  color: whitesmoke;
+
+  font-size: 2rem;
+}
+
+.donate-btn:hover {
+  color: black;
+  background-color: whitesmoke;
+  border: 3px solid #3cc78f;
+}
+
+button:focus {
+  outline: none;
+}
+
 /* donate section ends */
+
 /* footer starts from here */
 .footer {
   min-height: 20rem;
@@ -539,15 +584,41 @@ hr {
     font-weight: 200;
   }
 
-
-  .volunteer-card{
+  .volunteer-card {
     flex-direction: column;
 
     margin-top: 0;
   }
 
-  .vol-card{
+  .vol-card {
     margin-top: 5rem;
+  }
+
+  /* donate section starts */
+
+  .midtext {
+    font-size: 2.5rem;
+    margin-top: 7rem;
+  }
+  .midword {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  input {
+    border: 2px solid #3cc78f;
+    width: 14rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .donate-btn {
+    width: 14rem;
+    height: 3rem;
+    margin-top: 3rem;
+    color: whitesmoke;
+
+    font-size: 1.5rem;
   }
 
   .footer-container {
@@ -581,6 +652,30 @@ hr {
   .volunteer-text p {
     font-size: 2rem;
     top: 10px;
+  }
+  .midtext {
+    font-size: 2rem;
+    margin-top: 7rem;
+  }
+  .donate-btn {
+    background: #3cc78f;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+    color: whitesmoke;
+
+    font-size: 1rem;
+  }
+  .donate-btn:hover {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  input {
+   
+    width: 10rem;
+  
   }
 }
 
