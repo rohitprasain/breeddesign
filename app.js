@@ -1,24 +1,20 @@
-
 openhamburger = document.querySelector(".openhamburger");
+presents = document.getElementById("present");
 
 menu = document.querySelector(".menu");
-// main = document.querySelector('.main');
-nav = document.querySelector(".nav");
 
 closehamburger = document.querySelector(".closehamburger");
 
 openhamburger.addEventListener("click", () => {
-
   menu.style.display = "flex";
   menu.style.top = "0";
+  presents.style.opacity = "0";
 });
 
 closehamburger.addEventListener("click", () => {
   menu.style.top = "-100%";
-  presents.style.opacity = "1";
-
+  presents.style.opacity = "0";
 });
-
 
 //shaky number
 helping = document.querySelector(".helping");
@@ -34,23 +30,24 @@ helping.addEventListener("mouseout", () => {
   number.style.color = "green";
 });
 
-
 //hide ashika foundation presents
-presents = document.getElementById("present");
 
 var myScrollFunc = function () {
-  var y = window.scrollY;
-  
-  if (y < 250) {
-    presents.style.opacity = "1";
-  } else {
-    presents.style.opacity = "0.1";
-  }
-  if(menu.style.display=="flex"){
-    presents.style.opacity = "0";
+  navbar = document.getElementById("navbar");
 
+  var y = window.scrollY;
+  if (menu.style.display != "flex") {
+    if (y < 250) {
+      navbar.style.opacity = "1";
+
+      navbar.style.width = "90%";
+    } else if (y > 250 && y < 900) {
+      navbar.style.opacity = "0";
+    } else {
+      navbar.style.width = "100%";
+      navbar.style.opacity = "1";
+    }
   }
- 
 };
 
 window.addEventListener("scroll", myScrollFunc);
