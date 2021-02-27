@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Ropa Sans;
+  max-width: 100%;
 }
 
 /* top section start */
@@ -272,47 +273,49 @@ button:hover {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
 .reason {
   /* background-repeat: no-repeat;
   background-position: fill; */
-  /* border: 1px solid red; */
+  border: 1px solid red;
 
   position: static;
   margin-bottom: 0;
+  min-width: 100%;
 }
-
-.up {
+.reason img {
+  border: 1px solid rgb(0, 60, 255);
+  min-height: 100%;
+}
+/* .up {
   min-height: 2px;
   width: 100%;
-}
+} */
 .volunteer {
-  /* border: 1px solid red; */
-  background-repeat: no-repeat;
-  min-height: 40rem;
+  /* border: 1px solid yellow; */
+  position: relative;
 }
-.down {
-  height: 150%;
-  width: 100%;
-}
-.volunteer-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.volunteer-text p{
+  position: absolute;
+  top: 1rem;
+  left: 40%;
 
   text-align: center;
-  font-family: Ropa Sans;
-
   font-size: 3.5rem;
-  color: whitesmoke;
-  /* margin: 1rem; */
+  color: white;
+  
 }
 
 /* donate section starts */
 .donate-section {
+  /* border: 1px solid red; */
+}
+.donate-section img {
+  /* border: 1px solid red; */
+  min-height: 100%;
 }
 .donate-container {
-  position: relative;
-
   display: flex;
   justify-content: space-between;
 }
@@ -360,14 +363,14 @@ button:hover {
   /* padding-left: 5rem; */
 }
 
-.footer2{
+.footer2 {
   padding-left: 11rem;
 }
 .footer3 {
   padding-top: 4rem;
 }
 .footer-logo {
-  padding: 6rem;
+  padding: 2rem;
 }
 
 .footer1 .logo-des {
@@ -420,6 +423,7 @@ hr {
   }
   .nav {
     min-width: 100%;
+    border-radius: 0;
   }
   .menu {
     display: none;
@@ -437,6 +441,12 @@ hr {
     align-items: center;
 
     z-index: 1;
+  }
+  .logo {
+    padding: 2rem;
+  }
+  .logo img{
+    display: none;
   }
   .menu li {
     margin: 1rem;
@@ -475,6 +485,7 @@ hr {
     font-size: 1rem;
     font-weight: 200;
   }
+  
 
   .footer-container {
     flex-direction: column;
@@ -491,14 +502,34 @@ hr {
     min-height: 6vh;
     padding: 1;
   }
-  .footer2{
+  .footer2 {
     padding-left: 4rem;
   }
-  .footer3{
+  .footer3 {
     padding-left: 3rem;
   }
   .footer-logo {
     padding: 2rem;
     padding-left: 0.3rem;
   }
+}
+
+@media (max-width:780px){
+  .volunteer-text p{
+    font-size: 2rem;
+    top: 10px;
+  }
+
+ 
+}
+
+@media (max-width:600px){
+  .top .social-icons{
+    display: none;
+  }
+  .top{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
 }

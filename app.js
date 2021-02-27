@@ -1,10 +1,15 @@
 openhamburger = document.querySelector(".openhamburger");
-presents = document.getElementById("present");
-
 menu = document.querySelector(".menu");
-
 closehamburger = document.querySelector(".closehamburger");
 
+presents = document.getElementById("present");
+donatebtn =  document.querySelector(".btn");
+
+
+donatebtn.addEventListener("click" , ()=> {
+  menu.style.top = "-100%";
+
+})
 openhamburger.addEventListener("click", () => {
   menu.style.display = "flex";
   menu.style.top = "0";
