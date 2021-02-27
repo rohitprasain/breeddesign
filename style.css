@@ -359,6 +359,10 @@ button:hover {
   padding: 5rem 2rem;
   /* padding-left: 5rem; */
 }
+
+.footer2{
+  padding-left: 11rem;
+}
 .footer3 {
   padding-top: 4rem;
 }
@@ -485,6 +489,12 @@ hr {
   .footer3 {
     min-height: 6vh;
     padding: 1;
+  }
+  .footer2{
+    padding-left: 4rem;
+  }
+  .footer3{
+    padding-left: 3rem;
   }
   .footer-logo {
     padding: 2rem;
