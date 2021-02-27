@@ -16,14 +16,14 @@ openhamburger.addEventListener("click", () => {
 
 closehamburger.addEventListener("click", () => {
   menu.style.top = "-100%";
-  presents.style.opacity = "0";
+  // presents.style.opacity = "0";
 
   //scroll to top
   // document.body.scrollTop = 0;
   // document.documentElement.scrollTop = 0;
 
 //refresh the window
-  window.location.href = 'index.html'
+  // window.location.href = 'index.html';
 });
 
 //shaky number
