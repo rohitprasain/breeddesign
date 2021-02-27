@@ -3,13 +3,11 @@ menu = document.querySelector(".menu");
 closehamburger = document.querySelector(".closehamburger");
 
 presents = document.getElementById("present");
-donatebtn =  document.querySelector(".btn");
+donatebtn = document.querySelector(".btn");
 
-
-donatebtn.addEventListener("click" , ()=> {
+donatebtn.addEventListener("click", () => {
   menu.style.top = "-100%";
-
-})
+});
 openhamburger.addEventListener("click", () => {
   menu.style.display = "flex";
   menu.style.top = "0";
@@ -19,6 +17,13 @@ openhamburger.addEventListener("click", () => {
 closehamburger.addEventListener("click", () => {
   menu.style.top = "-100%";
   presents.style.opacity = "0";
+
+  //scroll to top
+  // document.body.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
+
+//refresh the window
+  window.location.href = 'index.html'
 });
 
 //shaky number
