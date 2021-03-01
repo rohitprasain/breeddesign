@@ -322,7 +322,7 @@ button:hover {
 .volunteer-text p {
   position: absolute;
   top: 1rem;
-  left: 40%;
+  left: 35%;
 
   text-align: center;
   font-size: 3.5rem;
@@ -616,6 +616,8 @@ hr {
     margin-top: 0;
   }
 
+  
+
   .vol-card {
     margin-top: 5rem;
   }
@@ -677,7 +679,9 @@ hr {
 @media (max-width: 780px) {
   .volunteer-text p {
     font-size: 2rem;
-    top: 10px;
+    top: 6px;
+    left: 30%;
+
   }
   .midtext {
     font-size: 2rem;
