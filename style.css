@@ -176,7 +176,7 @@ button:hover {
 }
 
 .helping {
-  min-height: 30vh;
+  min-height: 10rem;
 
   display: flex;
   flex-direction: row;
@@ -275,22 +275,43 @@ button:hover {
 }
 
 .reason {
-  /* background-repeat: no-repeat;
-  background-position: fill; */
+  /* background-repeat: no-repeat; */
+  /* background-position: fill; */
   /* border: 1px solid red; */
+  min-height: 30rem;
 
-  position: static;
-  margin-bottom: 0;
+  position: relative;
+  /* margin-bottom: 1rem; */
   min-width: 100%;
+
+  /* margin-bottom: 1rem; */
 }
-.reason img {
-  border: 1px solid rgb(0, 60, 255);
-  min-height: 100%;
+.reason-image1 img {
+  bottom: 0;
+  position: absolute;
 }
-/* .up {
-  min-height: 2px;
-  width: 100%;
-} */
+.reason-image2 img {
+  bottom: 0;
+  position: absolute;
+}
+.reason-image3 img {
+  bottom: 2rem;
+  position: absolute;
+}
+
+.reason-word {
+  position: absolute;
+  top: 4rem;
+  left: 35rem;
+  right: 3rem;
+}
+
+.reason-heading p {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: #3cc78f;
+}
 
 /* our volunteer section starts */
 .volunteer {
@@ -400,7 +421,7 @@ input {
   font-size: 2rem;
   text-align: center;
 }
-input:focus{
+input:focus {
   outline: none;
 }
 .donate-btn {
@@ -571,7 +592,7 @@ hr {
 
   .helping {
     flex-direction: column;
-    min-height: 35rem;
+    min-height: 25rem;
   }
   .helping h1 {
     text-decoration: none;
@@ -584,6 +605,11 @@ hr {
     font-weight: 200;
   }
 
+  .reason-heading p {
+    font-size: 2.5rem;
+    font-weight: 500;
+
+  }
   .volunteer-card {
     flex-direction: column;
 
@@ -673,9 +699,10 @@ hr {
   }
 
   input {
-   
     width: 10rem;
-  
+  }
+  .reason-word {
+    display: none;
   }
 }
 
